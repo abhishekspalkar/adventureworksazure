@@ -1,0 +1,9 @@
+{
+	"name": "adfadventureworksdl4587",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e957235c-dd43-446e-a802-db09d8b15e3b",
+		"tenantId": "a8eec281-aaa3-4dae-ac9b-9a398b9215e7"
+	}
+}
