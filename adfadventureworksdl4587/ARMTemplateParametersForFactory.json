@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfadventureworksdl4587"
+		},
+		"E_Git_adventureworksdl4587_accountKey": {
+			"value": ""
+		},
+		"E_GitCopy_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"E_Git_adventureworksdl4587_properties_typeProperties_url": {
+			"value": "https://adventureworksdl4587.dfs.core.windows.net/"
+		}
+	}
+}
