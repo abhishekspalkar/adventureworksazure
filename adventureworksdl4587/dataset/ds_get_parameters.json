@@ -1,0 +1,32 @@
+{
+	"name": "ds_get_parameters",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "E_Git_adventureworksdl4587",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "git.json",
+				"fileSystem": "parameter"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"p_rel_url": {
+					"type": "string"
+				},
+				"p_sink_folder": {
+					"type": "string"
+				},
+				"p_sink_file": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"name": "E_get_dataset_dynamic_git",
+	"properties": {
+		"description": "extract_getting_datasets_from_git_dynamically",
+		"linkedServiceName": {
+			"referenceName": "E_GitCopy",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_relative_url": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().p_relative_url",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
